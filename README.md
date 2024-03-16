@@ -8,4 +8,4 @@ Helsingin Yliopiston kurssille Algoritmit ja tekoäly toteutettu harjoitustyö T
 
 ## Viikkoraportit
 
-- [Viikko 1](./dokumentaatio/viikkoraportit/viikko1.md)
+- [Viikko 1](./dokumentaatio/viikkoraportit/viikkoraportti1.md)
