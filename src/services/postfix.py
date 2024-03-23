@@ -1,4 +1,7 @@
 class Postfixconverter:
+    """postfix konvertteri. Luokalla on tiedossa operaattorien tärkeysjärjestys.
+    """
+
     def __init__(self):
         self.precedence = {"+":1,
                            "-":1,
@@ -7,6 +10,15 @@ class Postfixconverter:
                            "^":3}
 
     def convert(self, infix):
+        """Metodi, joka muuttaa validin infix notaation postfix notaatioksi.
+
+        Argumentit:
+            infix (lista): Saa validin infix muotoisen lausekkeen listamuodossa.
+
+        Palauttaa:
+            postfix: Palauttaa listana postfix muodossa lausekkeen.
+        """
+
         stack = []
         postfix = []
 
