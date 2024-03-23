@@ -8,3 +8,5 @@ Tällä viikolla opin, miten Shunting yard -algoritmi toteutetaan käytännöss�
 Käyttäjän syötteen oikeellisuuden tarkistaminen on tuottanut haasteita.
 
 Seuraavaksi teen validoinnista vastaavan luokan valmiiksi ja päivitän sovelluslogiikkaa, jotta sovellusta voisi ajaa ja testailla käyttäjän syötteillä. Lisään myös loput laskutoimitukset.
+
+Käytin aikaa tällä viikolla noin 10 tuntia.
