@@ -23,7 +23,7 @@ class Postfixconverter:
         postfix = []
 
         for token in infix:
-            if type(token) == int or type(token) == float:
+            if isinstance(token, (int, float)):
                 postfix.append(token)
 
             elif token == "(":
@@ -39,7 +39,7 @@ class Postfixconverter:
             else:
                 while (
                     len(stack) > 0 and stack[-1] != "(" and
-                    (self.precedence[stack[-1]] > self.precedence[token] or 
+                    (self.precedence[stack[-1]] > self.precedence[token] or
                      self.precedence[stack[-1]] == self.precedence[token] and token != "^")
                      ):
                     postfix.append(stack.pop())

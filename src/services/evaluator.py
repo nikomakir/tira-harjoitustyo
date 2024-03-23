@@ -9,8 +9,8 @@ class Evaluator:
         """Metodi, joka laskee potfix muotoisen lausekkeen arvon.
 
         Argumentit:
-            postfix (lista): Ottaa listana postfix muodossa olevan lausekkeen. Muutta tämän deque -jonoksi.
-
+            postfix (lista): Ottaa listana postfix muodossa olevan lausekkeen.
+                            Muutta tämän deque -jonoksi.
         Returns:
             int/float: Palauttaa lausekkeen arvon.
         """
@@ -20,7 +20,7 @@ class Evaluator:
 
         while len(queue) > 0:
             token = queue.popleft()
-            if type(token) == int or type(token) == float:
+            if isinstance(token, (int, float)):
                 stack.append(token)
             else:
                 second_operand = stack.pop()
@@ -40,6 +40,5 @@ class Evaluator:
                             stack.append(result)
                         except ZeroDivisionError:
                             return "Virhe: Nollalla jako"
-  
+
         return stack.pop()
-    
