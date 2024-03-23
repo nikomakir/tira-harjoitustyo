@@ -1,3 +1,4 @@
+![GHA workflow badge](https://github.com/nikomakir/tira-harjoitustyo/workflows/CI/badge.svg)
 # Tieteellinen laskin
 
 Helsingin Yliopiston kurssille Algoritmit ja tekoäly toteutettu harjoitustyö Tieteellinen laskin.
